@@ -231,6 +231,8 @@ int main(void)
 {
     // Initialize malloc() and free()
     //
+    linked_list::register_malloc(instrumented_malloc);
+    linked_list::register_free(free);
     queue::register_malloc(instrumented_malloc);
     queue::register_free(instrumented_free);
 

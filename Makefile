@@ -39,7 +39,7 @@ run_functional_tests: linked_list_test_program
 	LD_LIBRARY_PATH=`pwd`:$$LD_LIBRARY_PATH ./linked_list_test_program
 
 run_performance_tests: queue_performance
-	LD_LIBRARY_PATH=`pwd`:$$LD_LIBRARY_PATH gdb ./queue_performance
+	LD_LIBRARY_PATH=`pwd`:$$LD_LIBRARY_PATH ./queue_performance
 
 run_functional_tests_gdb: linked_list_test_program
 	LD_LIBRARY_PATH=`pwd`:$$LD_LIBRARY_PATH gdb ./linked_list_test_program
